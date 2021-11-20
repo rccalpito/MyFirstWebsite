@@ -1,0 +1,66 @@
+h1{
+    font-size: 40px;
+    font-style: italic;
+    color: green;
+}
+
+p {
+    padding: 40px;
+}
+
+.header-paragraph{
+    color: blue
+}
+
+#second-paragraph {
+    font-size: 30px;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+@media only screen and (max-device-width: 480px) {
+    .card-container{
+        display: flex;
+        flex-direction: column;
+    }
+/* decendent selectors, parent class .card-container --> descendents of .card classs */
+    .card-container .card{
+        margin: 30px;
+    }
+}
+
+/* overriding bootstrap styles */
+/* .jumbotron{ 
+    background-color:chocolate;
+} */
+.paragraphs-container{
+    margin: 40px;
+}
+
+.more-about-me-container{
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.last-paragraph-container{
+    font-size: larger;
+}
+
+footer{
+    margin: 20px;
+    font-size: small;
+}
+
+.about-me-image{
+    background-image: url(https://media.istockphoto.com/photos/happiness-in-nature-male-silhouette-with-a-fishing-rod-in-the-picture-id656619460);
+    background-size: cover
+}
+
+.header-description{
+    color: white;
+    filter: drop-shadow(3px 6px 4px white)
+}
